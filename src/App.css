@@ -1,38 +1,106 @@
+/* App Container */
 .App {
-  text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #fbd3e9, #bb377d);
+    /* Gradient background with a lighter and darker shade of pink */
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+    color: #ffffff;
+    /* white text color */
+    background: linear-gradient(90deg, #bb377d, #fbd3e9);
+    /* Gradient background with a lighter and darker shade of pink */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    /* Add some space below the heading */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* To-Do List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* List Item Style */
+li {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #ffffff, #f1f1f1);
+    /* Gradient background with white and a light gray */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* subtle box shadow */
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    flex: 3.5;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hover Effect on List Item */
+li:hover {
+    background: linear-gradient(90deg, #f1f1f1, #e0e0e0);
+    /* Gradient background with a light gray and a slightly darker shade on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Completed Task Style */
+li.completed {
+    background: linear-gradient(90deg, #ffd7e5, #e0e0e0);
+    /* Gradient background with a light pink and light gray for completed tasks */
+    text-decoration: line-through;
+    color: #8d8d8d;
+    /* gray for completed tasks */
+}
+
+/* Delete Button Style */
+span {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #ffffff;
+    flex: 0.5;
+}
+
+/* Input and Button Styles */
+form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Adjusted to center input and button */
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #bb377d;
+    /* Pink border */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: linear-gradient(90deg, #bb377d, #a02a61);
+    /* Gradient background with a lighter and darker shade of pink */
+    color: #ffffff;
+    /* white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect on Button */
+button:hover {
+    background: linear-gradient(90deg, #a02a61, #861f4d);
+    /* Gradient background with a slightly darker pink and a deeper shade on hover */
+}
+
+.item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
