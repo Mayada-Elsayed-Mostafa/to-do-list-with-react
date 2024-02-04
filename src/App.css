@@ -3,16 +3,16 @@
     font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, #fbd3e9, #bb377d);
-    /* Gradient background with a lighter and darker shade of pink */
+    background: linear-gradient(135deg, #fce6f4, #b0d5f1);
+    /* Gradient background with a lighter pink and blue */
     height: 100vh;
 }
 
 h2 {
     color: #ffffff;
     /* white text color */
-    background: linear-gradient(90deg, #bb377d, #fbd3e9);
-    /* Gradient background with a lighter and darker shade of pink */
+    background: linear-gradient(90deg, #4299e1, #fce6f4);
+    /* Gradient background with blue and a lighter pink */
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -29,8 +29,8 @@ ul {
 li {
     display: flex;
     align-items: center;
-    background: linear-gradient(90deg, #ffffff, #f1f1f1);
-    /* Gradient background with white and a light gray */
+    background: linear-gradient(90deg, #ffffff, #edf2f7);
+    /* Gradient background with white and a light blue-gray */
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
@@ -43,14 +43,14 @@ li {
 
 /* Hover Effect on List Item */
 li:hover {
-    background: linear-gradient(90deg, #f1f1f1, #e0e0e0);
-    /* Gradient background with a light gray and a slightly darker shade on hover */
+    background: linear-gradient(90deg, #edf2f7, #d4e9f7);
+    /* Gradient background with a light blue-gray and a slightly darker shade on hover */
 }
 
 /* Completed Task Style */
 li.completed {
-    background: linear-gradient(90deg, #ffd7e5, #e0e0e0);
-    /* Gradient background with a light pink and light gray for completed tasks */
+    background: linear-gradient(90deg, #ffbbca, #edf2f7);
+    /* Gradient background with a light pink and light blue-gray for completed tasks */
     text-decoration: line-through;
     color: #8d8d8d;
     /* gray for completed tasks */
@@ -61,7 +61,7 @@ span {
     margin-left: 10px;
     cursor: pointer;
     font-size: 1.2em;
-    color: #ffffff;
+    color: #c70101;
     flex: 0.5;
 }
 
@@ -75,16 +75,16 @@ form {
 input {
     padding: 10px;
     width: 200px;
-    border: 1px solid #bb377d;
-    /* Pink border */
+    border: 1px solid #4299e1;
+    /* Blue border */
     border-radius: 5px;
 }
 
 button {
     padding: 10px 20px;
     margin-left: 10px;
-    background: linear-gradient(90deg, #bb377d, #a02a61);
-    /* Gradient background with a lighter and darker shade of pink */
+    background: linear-gradient(90deg, #4299e1, #2b6cb0);
+    /* Gradient background with a lighter and darker shade of blue */
     color: #ffffff;
     /* white */
     border: none;
@@ -95,8 +95,8 @@ button {
 
 /* Hover Effect on Button */
 button:hover {
-    background: linear-gradient(90deg, #a02a61, #861f4d);
-    /* Gradient background with a slightly darker pink and a deeper shade on hover */
+    background: linear-gradient(90deg, #2b6cb0, #1a4f87);
+    /* Gradient background with a slightly darker blue and a deeper shade on hover */
 }
 
 .item {
