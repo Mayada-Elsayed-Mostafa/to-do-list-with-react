@@ -24,9 +24,18 @@ function App() {
     setToDos(newToDos);
   }
 
+  const today = new Date();
+
+  function formatDate(date) {
+    return new Intl.DateTimeFormat(
+      'en-US',
+      { weekday: 'long' }
+    ).format(date);
+  }
+
   return (
     <div className="App">
-      <h2>My To Do List</h2>
+      <h2>My To Do List for {formatDate(today)}</h2>
 
       <ul>
         {toDos.map((item, index) => (
