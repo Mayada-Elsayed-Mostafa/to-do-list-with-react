@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
+import ToDoList from './ToDoList';
 import './App.css';
 
 function App() {
@@ -37,19 +38,11 @@ function App() {
     <div className="App">
       <h2>My To Do List for {formatDate(today)}</h2>
 
-      <ul>
-        {toDos.map((item, index) => (
-          <div className='item' key={index}>
-            <li
-              onClick={() => handleItemDone(index)}
-              className={item.completed ? 'completed' : ''}
-            >
-              {item.inputText}
-            </li>
-            <span className='delete-button' onClick={() => handleItemDelete(index)}>❌</span>
-          </div>
-        ))}
-      </ul>
+      <ToDoList
+        toDos={toDos}
+        handleItemDone={handleItemDone}
+        handleItemDelete={handleItemDelete}
+      />
 
       <input ref={inputRef} placeholder='Enter what you want to do...'></input>
       <button onClick={handleAddToDo}>Add</button>
